@@ -6,14 +6,11 @@ public class UseCase2PalindromeCheckerApp {
             for (int i = 0; i < length / 2; i++) {
                 char frontChar = input.charAt(i);
                 char backChar = input.charAt(length - 1 - i);
-
                 if (frontChar != backChar) {
                     isPalindrome = false;
                     break;
                 }
             }
-
-
             displayResult(input, isPalindrome);
         }
 
